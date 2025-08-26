@@ -1,0 +1,34 @@
+{
+  "name": "gpt-promp-injection",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/nameInjection.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/nameInjection.js",
+    "dev": "tsx nameInjection.ts",
+    "dev:ts-node": "node --loader ts-node/esm nameInjection.ts",
+    "clean": "rm -rf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GVengelen/gpt-promp-injection.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GVengelen/gpt-promp-injection/issues"
+  },
+  "homepage": "https://github.com/GVengelen/gpt-promp-injection#readme",
+  "dependencies": {
+    "openai": "^5.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.17.0",
+    "typescript": "^5.5.4"
+  }
+}
